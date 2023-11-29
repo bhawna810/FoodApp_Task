@@ -4,8 +4,6 @@ import logo from "../../assets/images/res-logo.png";
 
 import "../../styles/footer.css";
 
-import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -44,7 +42,7 @@ const Footer = () => {
                 <p>Location: Karnataka, PIN-201000, Bengaluru</p>
               </ListGroupItem>
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Phone: 01712345678</span>
+                <span>Phone: 08888888888</span>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
@@ -77,16 +75,16 @@ const Footer = () => {
               <p className="m-0">Follow: </p>
 
               <span>
-                <Link to="https://github.com/bhawna810">
+                <a href="https://github.com/bhawna810">
                   <i class="ri-github-line"></i>
-                </Link>
+                </a>
               </span>
 
               <span>
                 {" "}
-                <Link to=" https://www.linkedin.com/in/bhawna-choudhary-49b36419a/">
-                  <i class="ri-linkedin-line"></i>
-                </Link>{" "}
+                <a href="https://www.linkedin.com/in/bhawna-choudhary-49b36419a/">
+                  <i class="ri-linkedin-line"></i>{" "}
+                </a>
               </span>
             </div>
           </Col>

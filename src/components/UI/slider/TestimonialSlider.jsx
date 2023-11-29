@@ -1,9 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
-import ava01 from "../../../assets/images/ava-1.jpg";
-import ava02 from "../../../assets/images/ava-2.jpg";
-import ava03 from "../../../assets/images/ava-3.jpg";
+import woman from "../../../assets/images/woman.png";
+import myAvatar1 from "../../../assets/images/myAvatar1.png";
 
 import "../../../styles/slider.css";
 
@@ -28,7 +27,7 @@ const TestimonialSlider = () => {
           quis dolorem quas!"
         </p>
         <div className=" slider__content d-flex align-items-center gap-3 ">
-          <img src={ava01} alt="avatar" className=" rounded" />
+          <img src={myAvatar1} alt="avatar" className=" rounded" />
           <h6>Jhon Doe</h6>
         </div>
       </div>
@@ -40,7 +39,7 @@ const TestimonialSlider = () => {
           quis dolorem quas!"
         </p>
         <div className="slider__content d-flex align-items-center gap-3 ">
-          <img src={ava02} alt="avatar" className=" rounded" />
+          <img src={woman} alt="avatar" className=" rounded" />
           <h6>Mitchell Marsh</h6>
         </div>
       </div>
@@ -52,7 +51,7 @@ const TestimonialSlider = () => {
           quis dolorem quas!"
         </p>
         <div className="slider__content d-flex align-items-center gap-3 ">
-          <img src={ava03} alt="avatar" className=" rounded" />
+          <img src={myAvatar1} alt="avatar" className=" rounded" />
           <h6>Steven Crock</h6>
         </div>
       </div>
