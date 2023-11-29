@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
-
 import "../styles/checkout.css";
 
 const Checkout = () => {
@@ -46,6 +45,7 @@ const Checkout = () => {
               <form className="checkout__form" onSubmit={submitHandler}>
                 <div className="form__group">
                   <input
+                    name ="text"
                     type="text"
                     placeholder="Enter your name"
                     required
@@ -55,7 +55,8 @@ const Checkout = () => {
 
                 <div className="form__group">
                   <input
-                    type="email"
+                    name ="email" 
+                    type= "email"
                     placeholder="Enter your email"
                     required
                     onChange={(e) => setEnterEmail(e.target.value)}
@@ -63,6 +64,7 @@ const Checkout = () => {
                 </div>
                 <div className="form__group">
                   <input
+                    name = "number"
                     type="number"
                     placeholder="Phone number"
                     required
@@ -71,6 +73,7 @@ const Checkout = () => {
                 </div>
                 <div className="form__group">
                   <input
+                    name ="text"
                     type="text"
                     placeholder="Country"
                     required
@@ -79,6 +82,7 @@ const Checkout = () => {
                 </div>
                 <div className="form__group">
                   <input
+                    name = "text"
                     type="text"
                     placeholder="City"
                     required
@@ -87,6 +91,7 @@ const Checkout = () => {
                 </div>
                 <div className="form__group">
                   <input
+                    name = "number"
                     type="number"
                     placeholder="Postal code"
                     required
@@ -102,14 +107,14 @@ const Checkout = () => {
             <Col lg="4" md="6">
               <div className="checkout__bill">
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Subtotal: <span>${cartTotalAmount}</span>
+                  Subtotal: <span>₹{cartTotalAmount}</span>
                 </h6>
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Shipping: <span>${shippingCost}</span>
+                  Shipping: <span>₹{shippingCost}</span>
                 </h6>
                 <div className="checkout__total">
                   <h5 className="d-flex align-items-center justify-content-between">
-                    Total: <span>${totalAmount}</span>
+                    Total: <span>₹{totalAmount}</span>
                   </h5>
                 </div>
               </div>

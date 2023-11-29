@@ -94,7 +94,7 @@ const FoodDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Price: <span>${price}</span>
+                  Price: <span>₹{price}</span>
                 </p>
                 <p className="category mb-5">
                   Category: <span>{category}</span>
@@ -129,25 +129,21 @@ const FoodDetails = () => {
               ) : (
                 <div className="tab__form mb-3">
                   <div className="review pt-5">
-                    <p className="user__name mb-0">Jhon Doe</p>
-                    <p className="user__email">jhon1@gmail.com</p>
+                    <p className="user__name mb-0">chirag</p>
+                    <p className="user__email">chirag@gmail.com</p>
                     <p className="feedback__text">great product</p>
                   </div>
 
                   <div className="review">
-                    <p className="user__name mb-0">Jhon Doe</p>
-                    <p className="user__email">jhon1@gmail.com</p>
-                    <p className="feedback__text">great product</p>
+                    <p className="user__name mb-0">Bhawna</p>
+                    <p className="user__email">chirag@gmail.com</p>
+                    <p className="feedback__text">tasty</p>
                   </div>
 
-                  <div className="review">
-                    <p className="user__name mb-0">Jhon Doe</p>
-                    <p className="user__email">jhon1@gmail.com</p>
-                    <p className="feedback__text">great product</p>
-                  </div>
                   <form className="form" onSubmit={submitHandler}>
                     <div className="form__group">
                       <input
+                        name = "name"
                         type="text"
                         placeholder="Enter your name"
                         onChange={(e) => setEnteredName(e.target.value)}
@@ -157,6 +153,7 @@ const FoodDetails = () => {
 
                     <div className="form__group">
                       <input
+                        name = "email"
                         type="text"
                         placeholder="Enter your email"
                         onChange={(e) => setEnteredEmail(e.target.value)}
@@ -166,6 +163,7 @@ const FoodDetails = () => {
 
                     <div className="form__group">
                       <textarea
+                        name = "text"
                         rows={5}
                         type="text"
                         placeholder="Write your review"

@@ -60,8 +60,13 @@ const Header = () => {
       <Container>
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
-            <img src={logo} alt="logo" />
-            <h5>Dil Foods</h5>
+           <Link to={`/home`}>
+            { <>
+                <img src={logo} alt="logo" />
+                <h5>Dil Foods</h5>
+              </>
+             }
+            </Link>
           </div>
 
           {/* ======= menu ======= */}
@@ -86,12 +91,6 @@ const Header = () => {
             <span className="cart__icon" onClick={toggleCart}>
               <i class="ri-shopping-basket-line"></i>
               <span className="cart__badge">{totalQuantity}</span>
-            </span>
-
-            <span className="user">
-              <Link to="/login">
-                <i class="ri-user-line"></i>
-              </Link>
             </span>
 
             <span className="mobile__menu" onClick={toggleMenu}>
